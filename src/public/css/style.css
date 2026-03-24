@@ -1214,3 +1214,40 @@ footer {
     border-radius: 10px;
     margin: 20px 0;
 }
+
+/* New styles added by automated update */
+.featured-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff4136;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.8em;
+}
+
+.new-product-highlight {
+    border: 2px solid #ff4136;
+    box-shadow: 0 0 10px rgba(255, 65, 54, 0.3);
+}
+
+/* Animation for new products */
+@keyframes highlight-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255, 65, 54, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(255, 65, 54, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 65, 54, 0); }
+}
+
+.new-item {
+    animation: highlight-pulse 2s infinite;
+}
+
+/* Delivery mode styles */
+.delivery-options {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
