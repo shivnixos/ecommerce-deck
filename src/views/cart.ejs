@@ -1,0 +1,38 @@
+<% include ../layouts/main %>
+
+<% block content %>
+<h1>Shopping Cart</h1>
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Cart Items</h5>
+                <p>Your cart is currently empty.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Cart Summary</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Subtotal</span>
+                        <span>$0.00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Shipping</span>
+                        <span>$0.00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <strong>Total</strong>
+                        <strong>$0.00</strong>
+                    </li>
+                </ul>
+                <a href="/checkout" class="btn btn-primary w-100 mt-3">Proceed to Checkout</a>
+            </div>
+        </div>
+    </div>
+</div>
+<% endblock %>
